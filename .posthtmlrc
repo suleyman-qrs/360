@@ -1,0 +1,14 @@
+{
+  "plugins": {
+    "posthtml-extend": {
+      "root": "src",
+      "strict": false
+    },
+    "posthtml-include": {
+      "root": "src"
+    },
+    "posthtml-inline-svg": {
+      "cwd": "src"
+    }
+  }
+}

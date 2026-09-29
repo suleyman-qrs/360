@@ -1,0 +1,45 @@
+// Colors
+$color-surface: #05070f; // page bg
+$color-surface-subtle: #0a0e1a;
+$color-surface-emphasis: #121829; // reels / newsletter blocks
+$color-placeholder: #1f2738;
+$color-text: #ffffff;
+$color-text-muted: #a8a8a3;
+$color-text-accent: #ff3b30; // labels
+$color-action: #de0000; // Subscribe / Sign up buttons
+$color-border: #1f2738;
+$color-border-hud: #4b4e57;
+
+// Fonts
+$font-display: "Archivo Black", sans-serif; // SILENCED, TROIS CENT 60
+$font-heading: "Freeman", sans-serif; // LATEST NEWS, card titles
+$font-body: "Inter", sans-serif; // backup
+$font-mono: "Reddit Mono", monospace; // meta, labels, buttons
+
+// Type sizes (px in Figma → rem)
+$fs-display-xl: 7rem; // 112
+$fs-display-lg: 4.5rem; // 72
+$fs-h1: 3.5rem; // 56
+$fs-h2: 2.5rem; // 40
+$fs-h4: 1.375rem; // 22
+$fs-body-lead: 1.375rem; // 22
+$fs-body: 1.125rem; // 18
+$fs-body-sm: 0.9375rem; // 15
+$fs-label-md: 0.875rem; // 14
+$fs-label-sm: 0.75rem; // 12
+
+// Spacing
+$space-2xs: 4px;
+$space-xs: 8px;
+$space-sm: 12px;
+$space-md: 16px;
+$space-lg: 24px;
+$space-xl: 32px;
+$space-2xl: 48px;
+$space-3xl: 64px;
+$space-4xl: 96px;
+
+// Layout
+$container-max-width: 1440px; // 1920 − 2×240 margin
+$gutter: 24px;
+$section-gap: 128px; // every section starts 128px down
