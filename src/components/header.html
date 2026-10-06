@@ -1,6 +1,6 @@
 <header class="site-header">
   <div class="container site-header-inner">
-    <a class="site-header-logo" href="/">trois cent 60</a>
+    <a class="site-header-logo" src="/src/assets/images/logo/logo.svg"></a>
 
     <nav aria-label="Categories">
       <ul class="site-header-nav">
@@ -17,7 +17,16 @@
     </nav>
     <div class="site-header-actions">
       <form>
-        <input type="search" name="q" placeholder="Search" />
+        <label id="searchLabel" for="search"
+          >Search
+          <input
+            id="search"
+            aria-labelledby="searchLabel"
+            type="search"
+            name="search"
+            placeholder="Search"
+          />
+        </label>
       </form>
       <a href="#" aria-label="Account">Account</a>
     </div>
