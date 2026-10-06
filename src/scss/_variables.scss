@@ -1,34 +1,62 @@
-// Colors
-$color-surface: #05070f; // page bg
+// ---------- Colors (Figma semantic tokens, dark mode) ----------
+// Surfaces
+$color-surface-default: #05070f; // page background
 $color-surface-subtle: #0a0e1a;
 $color-surface-emphasis: #121829; // reels / newsletter blocks
-$color-placeholder: #1f2738;
-$color-text: #ffffff;
-$color-text-muted: #a8a8a3;
-$color-text-accent: #ff3b30; // labels
-$color-action: #de0000; // Subscribe / Sign up buttons
-$color-border: #1f2738;
+$color-surface-placeholder: #1f2738; // image placeholders only
+$color-surface-inverse: #ffffff;
+
+// Text
+$color-text-primary: #ffffff;
+$color-text-secondary: #a8a8a3; // muted
+$color-text-accent: #ff3b30; // labels, red text
+$color-text-inverse: #05070f; // on white surfaces
+$color-text-on-image: #ffffff;
+$color-text-on-emphasis: #ffffff;
+$color-text-on-emphasis-secondary: #a8a8a3;
+$color-text-on-emphasis-accent: #ff3b30;
+
+// Actions
+$color-action-primary: #de0000; // button fill
+$color-action-on-primary: #ffffff; // text on button
+
+// Borders
+$color-border-default: #1f2738;
 $color-border-hud: #4b4e57;
+$color-border-strong: #ffffff;
+$color-border-on-emphasis: #4b4e57;
 
-// Fonts
-$font-display: "Archivo Black", sans-serif; // SILENCED, TROIS CENT 60
-$font-heading: "Freeman", sans-serif; // LATEST NEWS, card titles
-$font-body: "Inter", sans-serif; // backup
-$font-mono: "Reddit Mono", monospace; // meta, labels, buttons
+// ---------- Fonts ----------
+$font-display: "Archivo Black", sans-serif; // display/xl, display/lg
+$font-heading: "Freeman", sans-serif; // heading/1, /2, /4
+$font-body: "Inter", sans-serif; // body/lead, /md, /sm
+$font-mono: "Reddit Mono", monospace; // meta, label, button
 
-// Type sizes (px in Figma → rem)
+// ---------- Type sizes (px in Figma, written as rem) ----------
 $fs-display-xl: 7rem; // 112
 $fs-display-lg: 4.5rem; // 72
-$fs-h1: 3.5rem; // 56
-$fs-h2: 2.5rem; // 40
-$fs-h4: 1.375rem; // 22
+$fs-heading-1: 3.5rem; // 56
+$fs-heading-2: 2.5rem; // 40
+$fs-heading-4: 1.375rem; // 22
 $fs-body-lead: 1.375rem; // 22
-$fs-body: 1.125rem; // 18
+$fs-body-md: 1.125rem; // 18
 $fs-body-sm: 0.9375rem; // 15
 $fs-label-md: 0.875rem; // 14
 $fs-label-sm: 0.75rem; // 12
 
-// Spacing
+// ---------- Line heights (from the text styles) ----------
+$lh-display-xl: 0.95;
+$lh-display-lg: 1;
+$lh-heading-1: 1;
+$lh-heading-2: 1.05;
+$lh-heading-4: 1.15;
+$lh-body-lead: 1.5;
+$lh-body-md: 1.65;
+$lh-body-sm: 1.55;
+$lh-label: 1.2;
+
+// ---------- Spacing ----------
+$space-0: 0;
 $space-2xs: 4px;
 $space-xs: 8px;
 $space-sm: 12px;
@@ -39,7 +67,8 @@ $space-2xl: 48px;
 $space-3xl: 64px;
 $space-4xl: 96px;
 
-// Layout
-$container-max-width: 1440px; // 1920 − 2×240 margin
-$gutter: 24px;
-$section-gap: 128px; // every section starts 128px down
+// ---------- Layout ----------
+$layout-margin: 240px; // side margin on the 1920 frame
+$layout-gutter: 24px;
+$layout-section-gap: 128px; // gap between sections
+$container-max-width: 1440px; // 1920 − 2 × 240
