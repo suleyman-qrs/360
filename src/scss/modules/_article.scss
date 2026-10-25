@@ -1,0 +1,18 @@
+// Article opening image (Figma "Figure" component)
+.article__figure-image {
+  width: 100%;
+  aspect-ratio: 1920 / 860;
+  object-fit: cover;
+}
+
+.article__figure-caption {
+  display: flex;
+  gap: $space-lg;
+  margin-top: $space-sm;
+  padding: 0 $layout-margin;
+  font-family: $font-mono;
+  font-size: $fs-label-md;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  color: $color-text-secondary;
+}

@@ -7,3 +7,16 @@
   font-family: "Archivo-Black";
   src: url("/src/assets/fonts/ArchivoBlack-Regular.woff2");
 }
+
+// Inter and Reddit Mono are variable fonts: one file covers Regular (400) and Medium (500)
+@font-face {
+  font-family: "Inter";
+  src: url("/src/assets/fonts/Inter-Variable.woff2");
+  font-weight: 400 500;
+}
+
+@font-face {
+  font-family: "Reddit Mono";
+  src: url("/src/assets/fonts/RedditMono-Variable.woff2");
+  font-weight: 400 500;
+}

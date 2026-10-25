@@ -10,20 +10,20 @@
     <include src="components/header.html"></include>
 
     <main class="article">
-      <div class="container">
-        <header class="article__header">
-          <p class="article__category">
-            <block name="category">Category</block>
-          </p>
-          <h1 class="article__title">
-            <block name="title">Article title</block>
-          </h1>
-          <p class="article__date"><block name="date">Date</block></p>
-        </header>
+      <header class="article__header container">
+        <p class="article__category">
+          <block name="category">Category</block>
+        </p>
+        <h1 class="article__title">
+          <block name="title">Article title</block>
+        </h1>
+        <p class="article__date"><block name="date">Date</block></p>
+      </header>
 
-        <div class="article__content">
-          <block name="content">Article body goes here.</block>
-        </div>
+      <block name="figure"></block>
+
+      <div class="article__content container">
+        <block name="content">Article body goes here.</block>
       </div>
     </main>
 

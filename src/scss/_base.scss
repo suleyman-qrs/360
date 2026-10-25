@@ -30,4 +30,15 @@ body {
   background-color: $color-surface-default;
   color: $color-text-primary;
   text-decoration: none;
+  font-family: $font-body;
+  font-size: $fs-body-md;
+  line-height: $lh-body-md;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-heading;
+  font-weight: 400;
 }
