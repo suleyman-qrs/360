@@ -1,0 +1,44 @@
+.newsletter {
+  padding: $layout-section-gap 0;
+}
+ 
+.newsletter-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: $space-2xl;
+  padding: $space-3xl;
+  background: $color-surface-emphasis;
+}
+ 
+.newsletter-text {
+  display: flex;
+  flex-direction: column;
+  gap: $space-md;
+  max-width: 480px;
+  color: $color-text-secondary;
+}
+ 
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-sm;
+  max-width: 520px;
+}
+ 
+.newsletter-input {
+  flex: 1;
+  padding: $space-md;
+  border: 1px solid $color-border-hud;
+  background: transparent;
+  color: $color-text-primary;
+  font-family: $font-mono;
+  font-size: $fs-label-md;
+}
+ 
+.newsletter-note {
+  width: 100%;
+  font-family: $font-mono;
+  font-size: $fs-label-sm;
+  color: $color-text-secondary;
+}
