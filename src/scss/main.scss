@@ -2,14 +2,91 @@
 @import "font";
 @import "base";
 @import "layout";
-@import "modules/button";
+@import "modules/buttons";
 @import "modules/badge";
 @import "modules/section-heading";
 @import "modules/card";
 @import "modules/header";
-@import "modules/home";
-@import "modules/category";
 @import "modules/article";
 @import "modules/related-articles";
 @import "modules/newsletter";
 @import "modules/footer";
+@import "modules/category";
+
+.container-section {
+  padding-top: $layout-section-gap;
+}
+
+.latest-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $layout-gutter;
+}
+
+.biohazard-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: $space-2xl;
+}
+
+.biohazard-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: $space-lg;
+}
+
+.duo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $layout-gutter;
+}
+
+.reels {
+  margin-top: $layout-section-gap;
+  padding: $space-4xl 0;
+  background: $color-surface-emphasis;
+}
+
+.reels-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: $space-md;
+}
+
+@media (max-width: 768px) {
+  .latest-grid,
+  .biohazard-grid,
+  .duo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reels-grid {
+    grid-template-columns: repeat(5, 70%); // swipe sideways
+    overflow-x: auto;
+  }
+
+  .grand-format-title {
+    font-size: $fs-display-lg;
+  }
+}
+
+// _category.scss
+@media (max-width: 768px) {
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+// _card.scss
+@media (max-width: 768px) {
+  .card-featured .card-content {
+    position: static; // image first, then text (Figma note)
+    padding: $space-md 0 0;
+    background: none;
+  }
+
+  .card-featured .card-title {
+    font-size: $fs-heading-2;
+  }
+}
