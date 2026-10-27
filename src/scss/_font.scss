@@ -8,7 +8,7 @@
   src: url("/src/assets/fonts/ArchivoBlack-Regular.woff2");
 }
 
-// Inter and Reddit Mono are variable fonts: one file covers Regular (400) and Medium (500)
+// Inter and Reddit Mono are variable fonts: one file covers every weight
 @font-face {
   font-family: "Inter";
   src: url("/src/assets/fonts/Inter-Variable.woff2");
@@ -18,45 +18,5 @@
 @font-face {
   font-family: "Reddit Mono";
   src: url("/src/assets/fonts/RedditMono-Variable.woff2");
-  font-weight: 400 500;
-}
-
-@font-face {
-  font-family: subtitle-font;
-  src: format("/src/assets/fonts/RedditMono-Black.woff2");
-}
-
-@font-face {
-  font-family: subtitle-font;
-  src: format("/src/assets/fonts/RedditMono-Bold.woff2");
-}
-
-@font-face {
-  font-family: subtitle-font;
-  src: format("/src/assets/fonts/RedditMono-ExtraBold.woff2");
-}
-
-@font-face {
-  font-family: subtitle-font;
-  src: format("/src/assets/fonts/RedditMono-ExtraLight.woff2");
-}
-
-@font-face {
-  font-family: subtitle-font;
-  src: format("/src/assets/fonts/RedditMono-light.woff2");
-}
-
-@font-face {
-  font-family: subtitle-font;
-  src: format("/src/assets/fonts/RedditMono-Medium.woff2");
-}
-
-@font-face {
-  font-family: subtitle-font;
-  src: format("/src/assets/fonts/RedditMono-Regular.woff2");
-}
-
-@font-face {
-  font-family: subtitle-font;
-  src: format("/src/assets/fonts/RedditMono-semibold.woff2");
+  font-weight: 200 900;
 }
