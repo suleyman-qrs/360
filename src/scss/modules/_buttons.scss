@@ -1,0 +1,27 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: $space-sm;
+  padding: $space-md $space-lg;
+  border: 2px solid transparent;
+  background: $color-action-primary;
+  color: $color-action-on-primary;
+  font-family: $font-mono;
+  font-weight: 700;
+  font-size: $fs-label-md;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+ 
+.button-secondary {
+  background: transparent;
+  border-color: $color-border-strong;
+}
+ 
+.button:focus-visible {
+  outline: 4px solid $color-text-accent;
+  outline-offset: 2px;
+}
