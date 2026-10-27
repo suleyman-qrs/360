@@ -1,0 +1,15 @@
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-image img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/10;
+  object-fit: cover;
+}
