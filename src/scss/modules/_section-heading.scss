@@ -1,0 +1,24 @@
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: $space-lg;
+  margin-bottom: $space-2xl;
+  padding-bottom: $space-md;
+  border-bottom: 1px solid $color-border-hud;
+}
+ 
+.section-heading-label {
+  font-family: $font-mono;
+  font-size: $fs-label-sm;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $color-text-accent;
+}
+ 
+.section-heading-title {
+  font-family: $font-display;
+  font-size: $fs-display-lg;
+  line-height: $lh-display-lg;
+  text-transform: uppercase;
+}
