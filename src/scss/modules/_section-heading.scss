@@ -22,3 +22,9 @@
   line-height: $lh-display-lg;
   text-transform: uppercase;
 }
+
+@media (max-width: 768px) {
+  .section-heading-title {
+    font-size: $fs-heading-1;
+  }
+}

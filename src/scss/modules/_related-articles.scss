@@ -43,3 +43,9 @@
   font-size: $fs-label-sm;
   color: $color-text-secondary;
 }
+
+@media (max-width: 768px) {
+  .keep-reading-list {
+    grid-template-columns: 1fr;
+  }
+}

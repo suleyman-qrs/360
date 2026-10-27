@@ -57,3 +57,18 @@
   display: flex;
   gap: $space-lg;
 }
+
+@media (max-width: 768px) {
+  .site-footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
+ 
+  .site-footer-about {
+    grid-column: 1 / -1; // full width on its own row
+  }
+ 
+  .site-footer-bottom {
+    flex-direction: column;
+    gap: $space-md;
+  }
+}
