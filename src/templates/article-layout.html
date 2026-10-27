@@ -1,36 +1,34 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>trois cent 60 — News</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../scss/main.scss" />
-  </head>
-  <body>
-    <include src="components/header.html"></include>
-
-    <main class="article">
-      <header class="article__header container">
-        <p class="article__category">
-          <block name="category">Category</block>
-        </p>
-        <h1 class="article__title">
-          <block name="title">Article title</block>
-        </h1>
-        <p class="article__date"><block name="date">Date</block></p>
-      </header>
-
-      <block name="figure"></block>
-
-      <div class="article__content container">
-        <block name="content">Article body goes here.</block>
-      </div>
-    </main>
-
-    <include src="components/related-articles.html"></include>
-    <include src="components/newsletter.html"></include>
-    <include src="components/footer.html"></include>
-
-    <script src="../js/main.js" type="module"></script>
-  </body>
-</html>
+<main class="article">
+  <header class="article__header container">
+    <p class="article__kicker">
+      <span class="badge">Article</span>
+      <span class="article__category"><block name="category">Category</block></span>
+    </p>
+ 
+    <h1 class="article__title"><block name="title">Article title</block></h1>
+ 
+    <p class="article__lead"><block name="lead">Chapô: the short intro paragraph.</block></p>
+ 
+    <div class="article__author">
+      <p class="article__author-name"><block name="author">The newsroom</block></p>
+      <p class="article__date"><block name="date">Date</block></p>
+    </div>
+ 
+    <ul class="article__share" aria-label="Share this article">
+      <li><a href="#">Copy link</a></li>
+      <li><a href="mailto:?subject=Trois Cent 60">Email</a></li>
+      <li><a href="#">Share</a></li>
+    </ul>
+  </header>
+ 
+  <block name="figure"></block>
+ 
+  <div class="article__content container">
+    <block name="content">Article body goes here.</block>
+ 
+    <p class="article__tags-label">Topics</p>
+    <ul class="article__tags">
+      <block name="tags"><li>#tag</li></block>
+    </ul>
+  </div>
+</main>
