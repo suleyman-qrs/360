@@ -1,0 +1,20 @@
+.reels {
+  margin-top: $layout-section-gap;
+  padding: $space-4xl 0;
+  background: $color-surface-subtle;
+}
+
+// mobile: swipe sideways
+.reels-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 70%);
+  gap: $space-md;
+  overflow-x: auto;
+}
+
+@media (min-width: 768px) {
+  .reels-grid {
+    grid-template-columns: repeat(5, 1fr);
+    overflow-x: visible;
+  }
+}

@@ -1,0 +1,37 @@
+.container-section {
+  padding-top: $layout-section-gap;
+}
+
+// mobile: one column
+.latest-grid,
+.biohazard-grid,
+.duo-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $layout-gutter;
+}
+
+.biohazard-grid {
+  gap: $space-2xl;
+}
+
+.biohazard-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: $space-lg;
+}
+
+@media (min-width: 768px) {
+  .latest-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .biohazard-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .duo-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

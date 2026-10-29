@@ -2,7 +2,7 @@
 .article__content {
   max-width: 840px;
 }
- 
+
 .article__header {
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@
   padding-top: $space-3xl;
   padding-bottom: $space-2xl;
 }
- 
+
 .article__kicker {
   display: flex;
   align-items: center;
@@ -20,80 +20,81 @@
   text-transform: uppercase;
   color: $color-text-accent;
 }
- 
+
+// mobile sizes first, desktop sizes in the media query below
 .article__title {
-  font-size: $fs-heading-1;
+  font-size: $fs-heading-2;
   line-height: $lh-heading-1;
   text-transform: uppercase;
 }
- 
+
 .article__lead {
   font-size: $fs-body-lead;
   line-height: $lh-body-lead;
   color: $color-text-secondary;
 }
- 
+
 .article__author,
 .article__share {
   font-family: $font-mono;
   font-size: $fs-label-md;
 }
- 
+
 .article__author-name {
   font-weight: 500;
   text-transform: uppercase;
 }
- 
+
 .article__date {
   color: $color-text-secondary;
 }
- 
+
 .article__share {
   display: flex;
   gap: $space-lg;
   list-style: none;
 }
- 
+
 .article__content {
   padding-top: $space-2xl;
   padding-bottom: $space-3xl;
 }
- 
+
 .article__content p {
   margin-bottom: $space-lg;
 }
- 
+
 .article__content h2 {
   margin: $space-2xl 0 $space-md;
   font-size: $fs-heading-2;
   line-height: $lh-heading-2;
   text-transform: uppercase;
 }
- 
+
 .article__content blockquote {
   margin: $space-2xl 0;
   padding-left: $space-lg;
   border-left: 4px solid $color-action-primary;
   font-family: $font-heading;
-  font-size: $fs-heading-2;
+  font-size: $fs-heading-4;
   line-height: $lh-heading-2;
   text-transform: uppercase;
 }
- 
+
 .article__tags-label {
   font-family: $font-mono;
   font-size: $fs-label-sm;
   text-transform: uppercase;
   color: $color-text-secondary;
 }
- 
+
 .article__tags {
   display: flex;
   flex-wrap: wrap;
   gap: $space-xs;
   list-style: none;
 }
- 
+
 .article__tags li {
   padding: $space-2xs $space-xs;
   border: 1px solid $color-border-strong;
@@ -102,12 +103,12 @@
   text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .article__title {
-    font-size: $fs-heading-2;
+    font-size: $fs-heading-1;
   }
- 
+
   .article__content blockquote {
-    font-size: $fs-heading-4;
+    font-size: $fs-heading-2;
   }
 }

@@ -1,13 +1,26 @@
 .section-heading {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   gap: $space-lg;
   margin-bottom: $space-2xl;
   padding-bottom: $space-md;
-  border-bottom: 1px solid $color-border-hud;
+  border-bottom: 2px solid $color-border-hud;
 }
- 
+
+// small square at the end of the HUD line
+.section-heading::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -7px;
+  width: 12px;
+  height: 12px;
+  border: 2px solid $color-border-hud;
+  background: $color-surface-default;
+}
+
 .section-heading-label {
   font-family: $font-mono;
   font-size: $fs-label-sm;
@@ -15,16 +28,27 @@
   text-transform: uppercase;
   color: $color-text-accent;
 }
- 
+
 .section-heading-title {
   font-family: $font-display;
-  font-size: $fs-display-lg;
+  font-size: $fs-heading-1;
   line-height: $lh-display-lg;
+  letter-spacing: -0.01em;
   text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
+.see-all {
+  font-family: $font-mono;
+  font-weight: 700;
+  font-size: $fs-label-md;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-decoration: underline 2px;
+  text-underline-offset: 6px;
+}
+
+@media (min-width: 768px) {
   .section-heading-title {
-    font-size: $fs-heading-1;
+    font-size: $fs-display-lg;
   }
 }

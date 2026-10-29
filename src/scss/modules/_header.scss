@@ -22,6 +22,7 @@
 }
 
 .site-header-date {
+  display: none;
   font-family: $font-mono;
   font-size: $fs-label-md;
   line-height: 1.4;
@@ -37,8 +38,14 @@
   text-transform: uppercase;
 }
 
+// mobile: login, subscribe and nav are hidden, the burger is shown
+.site-header-login,
+.site-header-actions .button {
+  display: none;
+}
+
 .site-header-nav {
-  display: flex;
+  display: none;
   gap: $space-xl;
   list-style: none;
   padding: $space-sm 0;
@@ -53,45 +60,55 @@
   text-decoration: none;
 }
 
-.site-header-burger,
 .mobile-menu {
   display: none;
 }
 
-@media (max-width: 768px) {
-  .site-header-date,
-  .site-header-login,
-  .site-header-actions .button,
+.mobile-menu.is-open {
+  display: flex;
+  flex-direction: column;
+  gap: $space-md;
+  position: fixed;
+  inset: 80px 0 0 0;
+  padding: $space-lg;
+  background: $color-surface-default;
+  overflow-y: auto;
+}
+
+.mobile-menu-links {
+  list-style: none;
+  font-family: $font-heading;
+  font-size: $fs-heading-4;
+  text-transform: uppercase;
+}
+
+.mobile-menu-links a {
+  display: block;
+  padding: $space-sm 0;
+  border-bottom: 1px solid $color-border-default;
+  text-decoration: none;
+}
+
+// desktop: show everything, hide the burger and the mobile menu
+@media (min-width: 768px) {
+  .site-header-date {
+    display: block;
+  }
+
+  .site-header-login {
+    display: inline;
+  }
+
+  .site-header-actions .button {
+    display: inline-flex;
+  }
+
   .site-header-nav {
-    display: none;
-  }
-
-  .site-header-burger {
-    display: block;
-  }
-
-  .mobile-menu.is-open {
     display: flex;
-    flex-direction: column;
-    gap: $space-md;
-    position: fixed;
-    inset: 80px 0 0 0;
-    padding: $space-lg;
-    background: $color-surface-default;
-    overflow-y: auto;
   }
 
-  .mobile-menu-links {
-    list-style: none;
-    font-family: $font-heading;
-    font-size: $fs-heading-4;
-    text-transform: uppercase;
-  }
-
-  .mobile-menu-links a {
-    display: block;
-    padding: $space-sm 0;
-    border-bottom: 1px solid $color-border-default;
-    text-decoration: none;
+  .site-header-burger,
+  .mobile-menu.is-open {
+    display: none;
   }
 }
