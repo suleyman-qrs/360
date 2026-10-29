@@ -26,6 +26,7 @@
   font-family: $font-mono;
   font-size: $fs-label-md;
   line-height: 1.4;
+  letter-spacing: 0.02em;
   color: $color-text-secondary;
 }
 
@@ -35,6 +36,7 @@
   gap: $space-lg;
   font-family: $font-mono;
   font-size: $fs-label-md;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
@@ -79,6 +81,7 @@
   list-style: none;
   font-family: $font-heading;
   font-size: $fs-heading-4;
+  letter-spacing: 0.01em;
   text-transform: uppercase;
 }
 

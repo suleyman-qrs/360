@@ -36,12 +36,14 @@
   color: $color-text-primary;
   font-family: $font-mono;
   font-size: $fs-label-md;
+  letter-spacing: 0.06em;
 }
 
 .newsletter-note {
   width: 100%;
   font-family: $font-mono;
   font-size: $fs-label-sm;
+  letter-spacing: 0.08em;
   color: $color-text-secondary;
 }
 
