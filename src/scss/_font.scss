@@ -1,22 +1,26 @@
 @font-face {
   font-family: "Freeman";
-  src: url("/src/assets/fonts/Freeman-Regular.woff2");
+  src: url("../assets/fonts/Freeman-Regular.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Archivo-Black";
-  src: url("/src/assets/fonts/ArchivoBlack-Regular.woff2");
+  src: url("../assets/fonts/ArchivoBlack-Regular.woff2") format("woff2");
+  font-display: swap;
 }
 
 // Inter and Reddit Mono are variable fonts: one file covers every weight
 @font-face {
   font-family: "Inter";
-  src: url("/src/assets/fonts/Inter-Variable.woff2");
+  src: url("../assets/fonts/Inter-Variable.woff2") format("woff2");
   font-weight: 400 500;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Reddit Mono";
-  src: url("/src/assets/fonts/RedditMono-Variable.woff2");
+  src: url("../assets/fonts/RedditMono-Variable.woff2") format("woff2");
   font-weight: 200 900;
+  font-display: swap;
 }
