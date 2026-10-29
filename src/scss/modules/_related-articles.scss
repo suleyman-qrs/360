@@ -19,12 +19,14 @@
   font-family: $font-display;
   font-size: $fs-display-lg;
   line-height: 1;
+  letter-spacing: -0.01em;
   color: $color-text-accent;
 }
 
 .keep-reading-category {
   font-family: $font-mono;
   font-size: $fs-label-sm;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: $color-text-accent;
 }
@@ -35,6 +37,7 @@
   font-family: $font-heading;
   font-size: $fs-heading-4;
   line-height: $lh-heading-4;
+  letter-spacing: 0.01em;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -42,6 +45,7 @@
 .keep-reading-meta {
   font-family: $font-mono;
   font-size: $fs-label-sm;
+  letter-spacing: 0.02em;
   color: $color-text-secondary;
 }
 
