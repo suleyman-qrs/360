@@ -1,0 +1,89 @@
+.grand-format {
+  margin-top: $layout-section-gap;
+}
+
+.grand-format-cover {
+  display: flex;
+  align-items: flex-end;
+  min-height: 680px;
+  padding-bottom: $space-3xl;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(5, 8, 15, 0.25) 0%,
+      rgba(5, 8, 15, 0.35) 45%,
+      rgba(5, 8, 15, 0.92) 100%
+    ),
+    url("../../assets/images/articles/sweatshops-audit-silenced.jpg") center / cover;
+}
+
+.grand-format-cover .container {
+  display: flex;
+  flex-direction: column;
+  gap: $space-md;
+}
+
+.grand-format-label {
+  font-family: $font-mono;
+  font-weight: 500;
+  font-size: $fs-label-md;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.grand-format-title {
+  font-family: $font-display;
+  font-size: $fs-display-lg;
+  line-height: $lh-display-xl;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.grand-format-text {
+  max-width: 760px;
+  font-size: $fs-body-lead;
+  line-height: $lh-body-lead;
+  font-weight: 500;
+}
+
+.grand-format-list {
+  padding: $space-xl 0;
+  background: $color-surface-emphasis;
+}
+
+.grand-format-items {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-2xl;
+  list-style: none;
+}
+
+.list-card {
+  display: flex;
+  gap: $space-lg;
+  padding: $space-lg 0;
+  border-top: 1px solid $color-border-on-emphasis;
+}
+
+.list-card-number {
+  flex: 0 0 auto;
+  font-family: $font-display;
+  font-size: $fs-display-lg;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: $color-text-accent;
+}
+
+@media (min-width: 768px) {
+  .grand-format-title {
+    font-size: $fs-display-xl;
+  }
+
+  .grand-format-items {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .list-card-number {
+    width: 124px;
+  }
+}
