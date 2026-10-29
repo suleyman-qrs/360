@@ -15,7 +15,7 @@
     <h1 class="visually-hidden">Trois Cent 60</h1>
     <include src="components/header.html" locals='{"basePath":""}'></include>
     <main>
-      <section class="container-section">
+      <section class="container-section container">
         <!-- top -->
         <article class="card-featured">
           <div class="card-image">
@@ -45,9 +45,17 @@
         </article>
       </section>
 
-      <section class="container-section">
+      <section class="container-section container">
         <!-- Latest news -->
-        <div class="latest-grid">
+        <div class="section-heading">
+          <div>
+            <p class="section-heading-label">01 // The feed</p>
+            <h2 class="section-heading-title">Latest news</h2>
+          </div>
+          <a class="see-all" href="articles/category.html">See all →</a>
+        </div>
+        <ul class="latest-grid">
+          <li>
           <article class="card">
             <div class="card-image">
               <img
@@ -66,7 +74,9 @@
               <p class="card-meta">The newsroom — 21 june 2026</p>
             </div>
           </article>
+          </li>
 
+          <li>
           <article class="card">
             <div class="card-image">
               <img
@@ -86,7 +96,9 @@
               <p class="card-meta">The newsroom — 2 june 2026</p>
             </div>
           </article>
+          </li>
 
+          <li>
           <article class="card">
             <div class="card-image">
               <img
@@ -106,11 +118,19 @@
               <p class="card-meta">The newsroom — 21 june 2026</p>
             </div>
           </article>
-        </div>
+          </li>
+        </ul>
       </section>
 
-      <section class="container-section">
+      <section class="container-section container">
         <!-- Biohazard -->
+        <div class="section-heading">
+          <div>
+            <p class="section-heading-label">02 // Section</p>
+            <h2 class="section-heading-title">Biohazard</h2>
+          </div>
+          <a class="see-all" href="articles/category.html">See all →</a>
+        </div>
         <div class="biohazard-grid">
           <article class="card">
             <div class="card-image">
@@ -218,9 +238,39 @@
         </div>
       </section>
 
-      <section class="container-section">
-        <!-- Lisen, Watch -->
-        <div class="duo-grid"></div>
+      <section class="container-section container">
+        <!-- Listen, Watch -->
+        <div class="section-heading">
+          <div>
+            <p class="section-heading-label">04 // Formats</p>
+            <h2 class="section-heading-title">Listen, watch</h2>
+          </div>
+        </div>
+        <div class="duo-grid">
+          <article class="card card-media">
+            <div class="card-image">
+              <img src="assets/images/articles/rare-earths-refining.webp" alt="Molten metal in a smelter" />
+              <span class="badge">Podcast · 24 min</span>
+            </div>
+            <div class="card-content">
+              <p class="card-category">Black market resource</p>
+              <h3 class="card-title"><a href="articles/rare-earths-refining.html">The Element Nobody Can Refine Fast Enough</a></h3>
+              <p class="card-meta">The newsroom — 12 Aug. 2026</p>
+            </div>
+          </article>
+
+          <article class="card card-media">
+            <div class="card-image">
+              <img src="assets/images/articles/sweatshops-audit-silenced.webp" alt="Child breaking bricks at a worksite" />
+              <span class="badge">Gallery · 12 photos</span>
+            </div>
+            <div class="card-content">
+              <p class="card-category">Sweatshops</p>
+              <h3 class="card-title"><a href="articles/sweatshops-audit-silenced.html">255 workers, eight factories: the audit, in pictures</a></h3>
+              <p class="card-meta">The newsroom — 14 Jul. 2026</p>
+            </div>
+          </article>
+        </div>
       </section>
 
       <section class="reels">
@@ -231,7 +281,7 @@
               <p class="section-heading-label">03 // Short format</p>
               <h2 class="section-heading-title">Reels</h2>
             </div>
-            <a class="button button-secondary" href="articles/category.html">See all →</a>
+            <a class="see-all" href="articles/category.html">See all →</a>
           </div>
 
           <div class="reels-grid">
