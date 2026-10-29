@@ -53,6 +53,11 @@
   color: $color-text-accent;
 }
 
+// first words of a title in red
+.highlight {
+  color: $color-text-accent;
+}
+
 .card-text {
   font-size: $fs-body-sm;
   line-height: $lh-body-sm;
